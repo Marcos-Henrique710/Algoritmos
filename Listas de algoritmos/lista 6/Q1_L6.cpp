@@ -14,7 +14,7 @@ struct Alunos{
 };
 
 int main(){
-    const int tam = 1;
+    const int tam = 10;
     Alunos alunos[tam];
     int i;
 
