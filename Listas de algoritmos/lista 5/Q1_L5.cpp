@@ -10,27 +10,9 @@ int M[6][6], A, vetorA[36], i, j;
   
 //Entrada e saída de dados:
 cout << "\n\tDigite os itens da matriz (6x6): ";
-for(i = 0; i < 6; i++){
+  for(i = 0; i < 6; i++){
     for(i = 0; i < 6; i++){
         
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  }  
 }
