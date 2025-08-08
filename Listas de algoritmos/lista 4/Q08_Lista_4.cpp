@@ -12,10 +12,17 @@ um terceiro vetor C contendo todos os elementos comuns aos dois vetores  A e B .
 using namespace std;
 
 int main(){
-    vector<int> v(10);
-    for(int i=0;i<10;i++) cin>>v[i];
+    vector<int> v[10];
+    for(int i=0;i<10;i++) 
+        cin>>v[i];
     int sp=0,sn=0;
-    for(int x:v){ if(x>=0) sp+=x; else sn+=x; }
+    for(int x:v){ 
+        if(x>=0) 
+            sp+=x; 
+        else 
+            sn+=x;
+    }
+    
     cout<<sp<<" "<<sn<<"\n";
     return 0;
 }
