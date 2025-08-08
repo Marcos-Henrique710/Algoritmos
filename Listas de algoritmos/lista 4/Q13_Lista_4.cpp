@@ -19,8 +19,10 @@ using namespace std;
 
 int main(){
     vector<int> v(15);
-    for(int i=0;i<15;i++) cin>>v[i];
+    for(int i=0;i<15;i++) 
+        cin>>v[i];
     sort(v.begin(), v.end());
-    for(int i=0;i<15;i++) cout<<v[i]<<(i==14?'\n':' ');
+    for(int i=0;i<15;i++) 
+        cout<<v[i]<<(i==14?'\n':' ');
     return 0;
 }
