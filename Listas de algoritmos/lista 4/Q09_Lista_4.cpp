@@ -14,9 +14,14 @@ using namespace std;
 
 int main(){
     vector<int> A(10);
-    for(int i=0;i<10;i++) cin>>A[i];
+    for(int i=0;i<10;i++)
+        cin>>A[i];
     vector<int> P;
-    for(int i=0;i<10;i++) if(A[i]%2==0) P.push_back(i);
-    for(size_t i=0;i<P.size();i++) cout<<P[i]<<(i+1==P.size()?"\n":" ");
-    return 0;
+    for(int i=0;i<10;i++){
+        if(A[i]%2==0) 
+            P.push_back(i);
+    }
+    for(size_t i=0;i<P.size();i++) 
+        cout<<P[i]<<(i+1==P.size()?"\n":" ");
+    return 0
 }
