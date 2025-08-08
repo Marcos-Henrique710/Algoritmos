@@ -18,14 +18,24 @@ using namespace std;
 
 int main(){
     vector<int> A(10), B(10), C(10);
-    for(int i=0;i<10;i++) cin>>A[i];
-    for(int i=0;i<10;i++) cin>>B[i];
+    for(int i=0;i<10;i++) 
+        cin>>A[i];
+    for(int i=0;i<10;i++) 
+        cin>>B[i];
     int somaA = accumulate(A.begin(), A.end(), 0);
-    for(int i=0;i<10;i++) C[i]=A[i]+B[i];
+    for(int i=0;i<10;i++) 
+        C[i]=A[i]+B[i];
     int count=0;
-    for(int i=0;i<10;i++) if(A[i] > B[i]) count++;
+    for(int i=0;i<10;i++){ 
+        if(A[i] > B[i]) 
+            count++;
+    }
+    
     cout<<somaA<<"\n";
-    for(int i=0;i<10;i++) cout<<C[i]<<(i==9?'\n':' ');
+    
+    for(int i=0;i<10;i++) 
+        cout<<C[i]<<(i==9?'\n':' ');
+    
     cout<<count<<"\n";
     return 0;
 }
