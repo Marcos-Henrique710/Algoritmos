@@ -15,9 +15,14 @@ using namespace std;
 
 int main(){
     vector<int> v(20);
-    for(int i=0;i<20;i++) cin>>v[i];
+    for(int i=0;i<20;i++) 
+        cin>>v[i];
     int cnt=0; long long s=0;
-    for(int x:v) if(x>0){ cnt++; s+=x; }
+    for(int x:v) 
+        if(x>0){ 
+            cnt++; 
+            s+=x;
+        }
     cout<<cnt<<" "<<s<<"\n";
     return 0;
 }
