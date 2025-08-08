@@ -1,7 +1,7 @@
 /*
 3. somas em matriz 5x5
 */
-void q3(){
+int main(){
     int M[5][5];
     
     cout<<"Digite 25 inteiros para a matriz (5x5):\n";
