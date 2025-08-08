@@ -14,9 +14,13 @@ using namespace std;
 
 int main(){
     vector<int> v(12);
-    for(int i=0;i<12;i++) cin>>v[i];
-    vector<int> pref(12); pref[0]=v[0];
-    for(int i=1;i<12;i++) pref[i]=pref[i-1]+v[i];
-    for(int i=0;i<12;i++) cout<<pref[i]<<(i==11?'\n':' ');
+    for(int i=0;i<12;i++) 
+        cin>>v[i];
+    vector<int> pref(12); 
+    pref[0]=v[0];
+    for(int i=1;i<12;i++) 
+        pref[i]=pref[i-1]+v[i];
+    for(int i=0;i<12;i++) 
+        cout<<pref[i]<<(i==11?'\n':' ');
     return 0;
 }
