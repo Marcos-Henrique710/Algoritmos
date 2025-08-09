@@ -13,9 +13,17 @@ o elemento  -1 em cada posição substituindo o elemento que foi movido . Ao fin
 using namespace std;
 
 int main(){
-    vector<int> v(20); for(int i=0;i<20;i++) cin>>v[i];
+    vector<int> v(20);
+    for(int i=0;i<20;i++)
+        cin>>v[i];
     int m3=0,m5=0;
-    for(int x:v){ if(x%3==0) m3++; if(x%5==0) m5++; }
+    for(int x:v){ 
+        if(x%3==0) 
+            m3++; 
+        if(x%5==0) 
+            m5++;
+    }
+    
     cout<<m3<<" "<<m5<<"\n";
     return 0;
 }
