@@ -15,10 +15,16 @@ using namespace std;
 
 int main(){
     vector<int> v(10);
-    for(int i=0;i<10;i++) cin>>v[i];
+    for(int i=0;i<10;i++) 
+        cin>>v[i];
     int mx = *max_element(v.begin(), v.end());
     int second = INT_MIN;
-    for(int x:v) if(x!=mx && x>second) second=x;
-    if(second==INT_MIN) cout<<"Nao existe segundo maior\n"; else cout<<second<<"\n";
+    for(int x:v) 
+        if(x!=mx && x>second) 
+            second=x;
+    if(second==INT_MIN) 
+        cout<<"Nao existe segundo maior\n"; 
+    else 
+        cout<<second<<"\n";
     return 0;
 }
