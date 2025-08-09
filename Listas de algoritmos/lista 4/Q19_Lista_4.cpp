@@ -15,10 +15,14 @@ ou “ganhou a mega”.  O algoritmo deverá finalizar quando o usuário desejar
 using namespace std;
 
 int main(){
-    vector<int> v(10); for(int i=0;i<10;i++) cin>>v[i];
+    vector<int> v(10); 
+    for(int i=0;i<10;i++) 
+        cin>>v[i];
     int last = v.back();
-    for(int i=(int)v.size()-1;i>0;i--) v[i]=v[i-1];
+    for(int i=(int)v.size()-1;i>0;i--)
+        v[i]=v[i-1];
     v[0]=last;
-    for(int i=0;i<10;i++) cout<<v[i]<<(i==9?'\n':' ');
+    for(int i=0;i<10;i++) 
+        cout<<v[i]<<(i==9?'\n':' ');
     return 0;
 }
