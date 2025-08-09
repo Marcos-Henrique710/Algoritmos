@@ -14,10 +14,22 @@ faturamento mensal do armazém.
 using namespace std;
 
 int main(){
-    vector<int> v(20); for(int i=0;i<20;i++) cin>>v[i];
-    int val; cin>>val;
+    vector<int> v(20); 
+    for(int i=0;i<20;i++) 
+        cin>>v[i];
+    int val; 
+    cin>>val;
     int first=-1,last=-1;
-    for(int i=0;i<20;i++) if(v[i]==val){ if(first==-1) first=i; last=i; }
-    if(first==-1) cout<<"Valor nao encontrado\n"; else cout<<first<<" "<<last<<"\n";
+    
+    for(int i=0;i<20;i++)
+        if(v[i]==val){ 
+            if(first==-1) 
+                first=i;
+                last=i;
+        }
+    if(first==-1)
+        cout<<"Valor nao encontrado\n"; 
+    else 
+        cout<<first<<" "<<last<<"\n";
     return 0;
 }
