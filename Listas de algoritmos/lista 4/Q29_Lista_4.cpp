@@ -17,10 +17,15 @@ int main(){
     int erros=0;
     for(int i=0;i<20;){
         int x; cin>>x;
-        if(find(v.begin(), v.end(), x)==v.end()) { v.push_back(x); i++; }
-        else { erros++; }
+        if(find(v.begin(), v.end(), x)==v.end()){
+            v.push_back(x); i++; 
+        }
+        else{ 
+            erros++;
+        }
     }
-    for(int i=0;i<20;i++) cout<<v[i]<<(i==19?'\n':' ');
+    for(int i=0;i<20;i++) 
+        cout<<v[i]<<(i==19?'\n':' ');
     cout<<erros<<"\n";
     return 0;
 }
