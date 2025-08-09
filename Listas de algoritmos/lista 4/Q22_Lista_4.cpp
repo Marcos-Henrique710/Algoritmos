@@ -15,10 +15,16 @@ média dos elementos .
 using namespace std;
 
 int main(){
-    vector<int> v(10); for(int i=0;i<10;i++) cin>>v[i];
-    int pos; cin>>pos;
-    if(pos<0||pos>=10){ cout<<"Posicao invalida\n"; return 0; }
-    for(int i=pos;i<9;i++) v[i]=v[i+1];
-    for(int i=0;i<9;i++) cout<<v[i]<<(i==8?'\n':' ');
+    vector<int> v(10);
+    for(int i=0;i<10;i++) 
+        cin>>v[i];
+    int pos; 
+    cin>>pos;
+    if(pos<0||pos>=10)
+        cout<<"Posicao invalida\n"; 
+    for(int i=pos;i<9;i++) 
+        v[i]=v[i+1];
+    for(int i=0;i<9;i++) 
+        cout<<v[i]<<(i==8?'\n':' ');
     return 0;
 }
