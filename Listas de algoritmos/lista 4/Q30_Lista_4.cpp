@@ -16,11 +16,23 @@ using namespace std;
 int main(){
     vector<int> idade(10);
     vector<double> altura(10);
-    for(int i=0;i<10;i++) cin>>idade[i]>>altura[i];
-    int idxMai=0, idxMen=0; for(int i=1;i<10;i++){ if(altura[i]>altura[idxMai]) idxMai=i; if(altura[i]<altura[idxMen]) idxMen=i; }
+    for(int i=0;i<10;i++) 
+        cin>>idade[i]>>altura[i];
+    int idxMai=0, idxMen=0; 
+    for(int i=1;i<10;i++){ 
+        if(altura[i]>altura[idxMai]) 
+            idxMai=i; 
+        if(altura[i]<altura[idxMen]) idxMen=i;
+    }
     double soma=0; int cont=0;
-    for(int i=0;i<10;i++) if(idade[i]>=18){ soma+=altura[i]; cont++; }
+    for(int i=0;i<10;i++)
+        if(idade[i]>=18){ 
+            soma+=altura[i]; cont++;
+        }
     cout<<idade[idxMai]<<"\n"<<idade[idxMen]<<"\n";
-    if(cont>0) cout<< (soma/cont) <<"\n"; else cout<<"0\n";
+    if(cont>0)
+        cout<< (soma/cont) <<"\n"; 
+    else 
+        cout<<"0\n";
     return 0;
 }
