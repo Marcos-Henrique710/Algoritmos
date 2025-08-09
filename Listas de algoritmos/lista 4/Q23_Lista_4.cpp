@@ -21,9 +21,15 @@ using namespace std;
 
 int main(){
     vector<int> A(10), B(10), C(20);
-    for(int i=0;i<10;i++) cin>>A[i];
-    for(int i=0;i<10;i++) cin>>B[i];
-    for(int i=0;i<10;i++){ C[2*i]=A[i]; C[2*i+1]=B[i]; }
-    for(int i=0;i<20;i++) cout<<C[i]<<(i==19?'\n':' ');
+    for(int i=0;i<10;i++) 
+      cin>>A[i];
+    for(int i=0;i<10;i++) 
+      cin>>B[i];
+    for(int i=0;i<10;i++){
+      C[2*i]=A[i]; 
+      C[2*i+1]=B[i]; 
+    }
+    for(int i=0;i<20;i++) 
+      cout<<C[i]<<(i==19?'\n':' ');
     return 0;
 }
