@@ -13,8 +13,14 @@ using namespace std;
 
 #include <map>
 int main(){
-    vector<int> v(20); for(int i=0;i<20;i++) cin>>v[i];
-    map<int,int> freq; for(int x:v) freq[x]++;
-    for(auto &p:freq) if(p.second>1) cout<<p.first<<" "<<p.second<<"\n";
+    vector<int> v(20); 
+    for(int i=0;i<20;i++) 
+        cin>>v[i];
+    map<int,int> freq; 
+    for(int x:v) 
+        freq[x]++;
+    for(auto &p:freq) 
+        if(p.second>1) 
+            cout<<p.first<<" "<<p.second<<"\n";
     return 0;
 }
