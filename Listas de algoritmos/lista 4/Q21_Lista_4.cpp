@@ -20,12 +20,18 @@ Menu Principal
 using namespace std;
 
 int main(){
-    vector<int> v(10); for(int i=0;i<10;i++) cin>>v[i];
-    int pos, val; cin>>pos>>val;
-    if(pos<0||pos>10){ cout<<"Posicao invalida\n"; return 0; }
+    vector<int> v(10);
+    for(int i=0;i<10;i++) 
+        cin>>v[i];
+    int pos, val;
+    cin>>pos>>val;
+    if(pos<0||pos>10)
+        cout<<"Posicao invalida\n"; 
     v.push_back(0);
-    for(int i=(int)v.size()-1;i>pos;i--) v[i]=v[i-1];
+    for(int i=(int)v.size()-1;i>pos;i--)
+        v[i]=v[i-1];
     v[pos]=val;
-    for(int i=0;i<10;i++) cout<<v[i]<<(i==9?'\n':' ');
+    for(int i=0;i<10;i++) 
+        cout<<v[i]<<(i==9?'\n':' ');
     return 0;
 }
